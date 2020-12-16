@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'add_item' %}" method="post">
+        {% csrf_token %}
+        <div>
+            <input name="title" value="{{ title }}">
+            <input name="link" value="{{ link }}">
+            <input name="descr" value="{{ descr }}">
+        </div>
+        <button>add</button>
+    </form>
+</body>
+</html>
