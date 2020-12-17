@@ -1,0 +1,12 @@
+.page {
+    position: relative;
+    width: 100%;
+}
+.page_header {
+    display: inline-block;
+    margin: 0px;
+}
+.addPage {
+    background-color:  #F8F7F5;
+    border: 3px solid #313131;
+}

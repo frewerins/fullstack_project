@@ -1,0 +1,10 @@
+.pagesList {
+    border-top: #313131 solid 3px;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+.pageItem {
+    margin: 10px;
+}

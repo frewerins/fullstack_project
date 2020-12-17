@@ -1,0 +1,20 @@
+.folder {
+    position: relative;
+    display: inline-block;
+    text-align: none;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: 10px;
+    background-color: #313131;
+    color: bisque;
+    width: 100%;
+}
+
+.master_folder {
+    background-color: #F8F7F5;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
