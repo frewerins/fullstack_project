@@ -29,4 +29,6 @@ urlpatterns = [
     path('pages/<id>/', PageList.as_view()),
     path('items/', ItemList.as_view()),
     path('items/<id>/', ItemList.as_view()),
+    path('login/', CreateUserAPIView.as_view()),
+    path('user/', UserRetrieveUpdateAPIView.as_view())
 ]

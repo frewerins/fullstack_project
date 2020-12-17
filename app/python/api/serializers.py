@@ -1,4 +1,4 @@
-from rest_framework import serializers;
+from rest_framework import serializers
 from .models import *
 
 class ItemSerializer(serializers.ModelSerializer):
@@ -23,3 +23,10 @@ class PageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Page
         fields = ['id', 'title', 'items']
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = "__all__"
+        extra_kwargs = {'password': {'write_only': True}}
